@@ -1,0 +1,6 @@
+<launch>
+	<node name="rosbag" pkg="rosbag" type="play" args="/media/robond/e2507505-dfde-40e2-9c5d-a7ecc505e0f0/ridecell/2016-11-22-14-32-13_test.task1.bag"/>
+	<node name="lidar_image_calibration" pkg="ridecell_pkg" type="lidar_image_calibration.py" args="/media/robond/e2507505-dfde-40e2-9c5d-a7ecc505e0f0/ridecell/data/lidar_image_calibration_data.json /media/robond/e2507505-dfde-40e2-9c5d-a7ecc505e0f0/ridecell/cal_images/lidar_calibration_frame.jpg /media/robond/e2507505-dfde-40e2-9c5d-a7ecc505e0f0/ridecell/Results/Images/lidar_calibration_output.jpg " output="screen">
+		<remap from="camera" to="/sensors/camera/camera_info"/>
+	</node>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/media/robond/e2507505-dfde-40e2-9c5d-a7ecc505e0f0/ridecell/devel
+
+Name: launch_tools
+Description: Description of launch_tools
+Version: 0.0.3
+Cflags: 
+Libs: -L/media/robond/e2507505-dfde-40e2-9c5d-a7ecc505e0f0/ridecell/devel/lib 
+Requires: 
